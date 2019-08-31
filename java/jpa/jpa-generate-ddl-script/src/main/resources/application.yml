@@ -1,0 +1,11 @@
+spring:
+  jpa:
+    properties:
+      javax:
+        persistence:
+          schema-generation:
+            create-source: metadata
+            scripts:
+              action: drop-and-create
+              drop-target: drop.sql
+              create-target: create.sql
